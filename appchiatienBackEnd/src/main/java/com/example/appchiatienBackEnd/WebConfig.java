@@ -11,8 +11,9 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**") // Cấu hình cho tất cả các đường dẫn
-                .allowedOrigins("http://localhost:4200") // Chỉ định nguồn được phép
+                .allowedOrigins("https://appchitienfe-production.up.railway.app") // Chỉ định nguồn được phép
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") // Các phương thức HTTP được phép
+                .allowedHeaders("*") // Chấp nhận tất cả các headers
                 .allowCredentials(true); // Cho phép gửi cookie
     }
 }
