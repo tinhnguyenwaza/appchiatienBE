@@ -21,7 +21,7 @@ public class CommomController {
     @Autowired
     private CommomService commomService;
 
-
+    @CrossOrigin(origins = "https://appchitienfe-production.up.railway.app")
     @GetMapping("")
         public ResponseEntity<String> getUser(){
 
