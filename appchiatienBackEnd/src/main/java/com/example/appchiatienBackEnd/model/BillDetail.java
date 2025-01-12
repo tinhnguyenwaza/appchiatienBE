@@ -21,6 +21,9 @@ public class BillDetail {
     @Column(name = "id_bill")
     private Long idBill;
 
+    @Column(name = "totalAmountToPerson")
+    private Double totalAmountToPerson;
+
 
     public Long getId() {
         return id;
@@ -62,5 +65,12 @@ public class BillDetail {
         this.incomeAmount = incomeAmount;
     }
 
+    public Double getTotalAmountToPerson() {
+        return totalAmountToPerson;
+    }
+
+    public void setTotalAmountToPerson(Double totalAmountToPerson) {
+        this.totalAmountToPerson = totalAmountToPerson;
+    }
 
 }
